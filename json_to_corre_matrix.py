@@ -21,7 +21,7 @@ from os import listdir
         - (frames數量, 1, 67, 67)
 '''
 
-frame_path = "D:/sl_data/data/data_1"
+frame_path = "D:/sl_data/data/data_1_json"
 npz_path = "D:/sl_data/data/data_1_npz"
 
 def main():
@@ -67,7 +67,7 @@ def main():
         print(file,' done')
 
 def expression(x):
-        y = x.split('_')[1]
+        y = x.split('_')[2]
         return y[5:]
 
 def data_to_list(json_path,data_name):
